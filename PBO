@@ -1,0 +1,33 @@
+ private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    nama.setText("");
+    nim.setText("");
+    alamat.setText("");
+    Output.setText("");
+    }                                        
+
+    private void saveActionPerformed(java.awt.event.ActionEvent evt) {                                     
+      String text,jenis_kelamin,jurusan;
+        
+      text="Nama:"+nama.getText()+"\n";
+      
+      if(laki.isSelected()==true)
+      {
+          jenis_kelamin="Laki-laki";
+          
+      }
+      else
+      {
+        jenis_kelamin="Perempuan";
+      }
+
+     jurusan=cjurusan.getSelectedItem().toString();
+ 
+    Output.setText("Nama\t="+nama.getText()
+          +"Nim\t="+nim.getText()
+          +"Jurusan\t="+jurusan
+          +"Gender\t="+jenis_kelamin
+          +"Alamat\t="+alamat.getText()
+    );
+    }                                    
+
+   
